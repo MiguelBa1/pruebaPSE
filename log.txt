@@ -1,0 +1,129 @@
+[15-Jun-2021 03:37:32 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Dotenv\Dotenv" not found in /opt/lampp/htdocs/testSOAP/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 8
+[15-Jun-2021 04:18:28 Europe/Berlin] PHP Fatal error:  Uncaught Error: Array callback must have exactly two elements in /opt/lampp/htdocs/testSOAP/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 13
+[15-Jun-2021 04:18:56 Europe/Berlin] PHP Fatal error:  Uncaught Error: Array callback must have exactly two elements in /opt/lampp/htdocs/testSOAP/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 12
+[15-Jun-2021 04:19:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Array callback must have exactly two elements in /opt/lampp/htdocs/testSOAP/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 12
+[15-Jun-2021 04:19:26 Europe/Berlin] PHP Fatal error:  Uncaught Error: Array callback must have exactly two elements in /opt/lampp/htdocs/testSOAP/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 12
+[15-Jun-2021 04:19:26 Europe/Berlin] PHP Fatal error:  Uncaught Error: Array callback must have exactly two elements in /opt/lampp/htdocs/testSOAP/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 12
+[15-Jun-2021 04:19:26 Europe/Berlin] PHP Fatal error:  Uncaught Error: Array callback must have exactly two elements in /opt/lampp/htdocs/testSOAP/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 12
+[15-Jun-2021 04:19:27 Europe/Berlin] PHP Fatal error:  Uncaught Error: Array callback must have exactly two elements in /opt/lampp/htdocs/testSOAP/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 12
+[15-Jun-2021 04:32:14 Europe/Berlin] PHP Warning:  Undefined variable $nonce in /opt/lampp/htdocs/testSOAP/index.php on line 17
+[15-Jun-2021 04:57:14 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in /opt/lampp/htdocs/testSOAP/index.php:30
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 30
+[15-Jun-2021 04:57:32 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in /opt/lampp/htdocs/testSOAP/index.php:30
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 30
+[15-Jun-2021 05:00:55 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in /opt/lampp/htdocs/testSOAP/index.php:30
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 30
+[15-Jun-2021 19:50:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in /opt/lampp/htdocs/testSOAP/index.php:43
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 43
+[15-Jun-2021 19:50:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in /opt/lampp/htdocs/testSOAP/index.php:43
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 43
+[15-Jun-2021 19:50:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in /opt/lampp/htdocs/testSOAP/index.php:43
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 43
+[15-Jun-2021 19:50:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in /opt/lampp/htdocs/testSOAP/index.php:43
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 43
+[15-Jun-2021 19:50:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in /opt/lampp/htdocs/testSOAP/index.php:43
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 43
+[15-Jun-2021 19:50:31 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in /opt/lampp/htdocs/testSOAP/index.php:43
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 43
+[15-Jun-2021 19:50:31 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in /opt/lampp/htdocs/testSOAP/index.php:43
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 43
+[15-Jun-2021 19:50:32 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in /opt/lampp/htdocs/testSOAP/index.php:43
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 43
+[15-Jun-2021 19:50:38 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in /opt/lampp/htdocs/testSOAP/index.php:43
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 43
+[15-Jun-2021 19:50:38 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in /opt/lampp/htdocs/testSOAP/index.php:43
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 43
+[15-Jun-2021 19:51:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in /opt/lampp/htdocs/testSOAP/index.php:43
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 43
+[15-Jun-2021 20:51:13 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($var) must be of type Countable|array, string given in /opt/lampp/htdocs/testSOAP/index.php:40
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 40
+[15-Jun-2021 20:51:38 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($var) must be of type Countable|array, string given in /opt/lampp/htdocs/testSOAP/index.php:40
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 40
+[15-Jun-2021 20:52:18 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($var) must be of type Countable|array, string given in /opt/lampp/htdocs/testSOAP/index.php:40
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 40
+[15-Jun-2021 20:52:18 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($var) must be of type Countable|array, string given in /opt/lampp/htdocs/testSOAP/index.php:40
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 40
+[15-Jun-2021 20:52:19 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($var) must be of type Countable|array, string given in /opt/lampp/htdocs/testSOAP/index.php:40
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 40
+[15-Jun-2021 20:52:29 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($var) must be of type Countable|array, string given in /opt/lampp/htdocs/testSOAP/index.php:40
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 40
+[15-Jun-2021 20:52:30 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($var) must be of type Countable|array, string given in /opt/lampp/htdocs/testSOAP/index.php:40
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 40
+[15-Jun-2021 20:53:05 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($var) must be of type Countable|array, string given in /opt/lampp/htdocs/testSOAP/index.php:42
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 42
+[15-Jun-2021 22:06:14 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class PDOStatement could not be converted to string in /opt/lampp/htdocs/testSOAP/index.php:51
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 51
+[15-Jun-2021 22:06:38 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class PDOStatement could not be converted to string in /opt/lampp/htdocs/testSOAP/index.php:51
+Stack trace:
+#0 {main}
+  thrown in /opt/lampp/htdocs/testSOAP/index.php on line 51
