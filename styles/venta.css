@@ -1,0 +1,59 @@
+@import url('base.css');
+.pago {
+	width: 80%;
+	border-radius: 10px;
+	background-color: white;
+	padding: 2em;
+	height: 700px;
+}
+.pago input, select {
+	padding:.5em;
+	border-radius: 5px;
+	border-style: solid;
+}
+.wrapper{
+	height: 90%;
+	display: flex;
+	justify-content: space-around;
+}
+.datos-persona {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	border: 1px lightgray solid;
+	border-radius: 10px;
+	padding: 1em;
+	width: 48%;
+}
+.datos-compra {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	border: 1px lightgray solid;
+	border-radius: 10px;
+	padding: 1em;
+	width: 48%;
+}
+#btnpagar {
+	padding: .5em;
+}
+@media (max-width: 650px) {
+	body {
+		justify-content: initial;
+	}
+	.pago {
+		height: auto;
+	}
+	.wrapper {
+		display: inline;
+	}
+	.datos-compra, .datos-persona {
+		width: 100%;
+	}
+}
+
+@media (max-height: 650px) {
+	body {
+		justify-content: initial;
+	}
+}

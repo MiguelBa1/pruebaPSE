@@ -1,0 +1,7 @@
+Options All -Indexes
+
+RewriteEngine On
+
+RewriteBase /probandoPHP/
+
+RewriteRule ^([-a-zA-Z0-9/]+)$ index.php?ruta=$1
