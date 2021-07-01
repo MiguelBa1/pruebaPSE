@@ -1,22 +1,109 @@
 <?php
-class controladorUsuarios{
-	static public function ctrIngresoUsuario(){
-		if (isset($_POST['usuario'])){
-			$columna = "Usuario";
-			$valor = $_POST["usuario"];
-			if (Conexion::conectar()) {
-				$respuesta = ModeloUsuarios::MdlMostrarUsuarios($columna, $valor);
-				if ($respuesta["Usuario"] == $_POST["usuario"] && password_verify($_POST["contraseña"], $respuesta['Contraseña']) ) {
-					$_SESSION["iniciarSesion"] = "ok";
-					header('Location: venta');
-					#echo '<script>window.location = "venta";</script>';
-				}else{
-					echo '<div>
-						<strong>Error!</strong> Usuario y/o contraseña incorrectos.
-						</div>';
+class ControladorVenta{
+	public $token;
+	public $login;
+	public $tranKey;
+	public $sesion;
+	static public function ctrVenta(){
+		if (isset($_POST["documento"]) && $_POST["documento"] !='') {
+			$login = $_ENV['TOKEN'];
+			$secretKey = $_ENV['SECRETKEY'];
+			$seed = date('c');
+			$tranKey = sha1($seed.$secretKey, false);
+
+			$reference =time();
+
+			$request = [					
+				"auth"=>[
+					"login"=>$login,
+					"tranKey"=>$tranKey,
+					"seed"=>$seed
+				],
+				"transaction" => [
+					"language" => "ES",
+					"bankCode" => $_POST["banco"],
+					"bankInterface" => $_POST["tipo-persona"],
+					"reference" => $reference,
+					"description" => "Testing Payment.",
+					"currency" => $_POST["moneda"],
+					"totalAmount" => $_POST["total"],
+					"taxAmount" => 1.19,
+					"devolutionBase" => 0,
+					"tipAmount" => 0,
+					"payer" => [
+						"firstName" => $_POST["nombre"],
+						"lastName" => $_POST["apellido"],
+						"company" => 'Prueba',
+						"emailAddress" => $_POST["email"],
+						"address" => $_POST["direccion"],
+						"company" => 'Medellin',
+						"country" => 'Colombia',
+						"documentType" => $_POST["tipodoc"],
+						"document" => $_POST["documento"],
+						"mobile" => $_POST["telefono"],
+						"phone" => $_POST["telefono"]
+					],
+					"buyer" => [
+						"firstName" => $_POST["nombre"],
+						"lastName" => $_POST["apellido"],
+						"company" => 'Prueba',
+						"emailAddress" => $_POST["email"],
+						"address" => $_POST["direccion"],
+						"company" => 'Medellin',
+						"country" => 'Colombia',
+						"documentType" => $_POST["tipodoc"],
+						"document" => $_POST["documento"],
+						"mobile" => $_POST["telefono"],
+						"phone" => $_POST["telefono"]
+					],
+					"shipping" => [
+						"firstName" => $_POST["nombre"],
+						"lastName" => $_POST["apellido"],
+						"company" => 'Prueba',
+						"emailAddress" => $_POST["email"],
+						"address" => $_POST["direccion"],
+						"company" => 'Medellin',
+						"country" => 'Colombia',
+						"documentType" => $_POST["tipodoc"],
+						"document" => $_POST["documento"],
+						"mobile" => $_POST["telefono"],
+						"phone" => $_POST["telefono"]
+					],
+					"ipAddress" => "181.142.220.50",
+					"userAgent" => "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36",
+					"returnURL" => "http://localhost/probandoPHP/index.php?ruta=respuesta"
+				]
+			];
+
+			try {
+
+				$client = new SoapClient($_ENV['URL']);
+				$response = $client->createTransaction($request);
+				print_r($response);
+				if ($response->createTransactionResult->returnCode == "SUCCESS") {
+					// Se redirecciona el cliente ala pagina
+					$_SESSION["transactionID"] =$response->createTransactionResult->transactionID;
+					echo '<script>
+						window.location = "'.$response->createTransactionResult->bankURL.'";
+						</script>';
+					//var_dump($response->requestId);
+				} else {
+					// There was some error so check the message
+
+					echo '<div class="alert alert-danger" role="alert" style ="font-size:16pt; margin-top:7px;">
+								<strong>Error !</strong> '.$response->createTransactionResult->returnCode.'
+								</div>'	;
 				}
+				// var_dump($response);
+			} catch (Exception $e) {
+							var_dump($e->getMessage());
 			}
 		}
+	}
+
+	public function autenticacion($login, $tranKey){
+			 $this-> login = $login;
+			 $this-> tranKey = $tranKey;
 	}
 }
 ?>

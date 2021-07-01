@@ -24,7 +24,7 @@ $auth = [
 try {
 
 	// Conexion placetopay
-	$client = new SoapClient($_ENV('URL'));
+	$client = new SoapClient($_ENV['URL']);
 	$result = $client->getBankList($auth);
 	$items = $result->getBankListResult->item;
 
