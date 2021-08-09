@@ -79,18 +79,15 @@ class ControladorVenta{
 
 				$client = new SoapClient($_ENV['URL']);
 				$response = $client->createTransaction($request);
-				print_r($response);
 				if ($response->createTransactionResult->returnCode == "SUCCESS") {
-					// Se redirecciona el cliente ala pagina
+					// Se redirecciona el cliente a la pagina
 					$_SESSION["transactionID"] =$response->createTransactionResult->transactionID;
 					echo '<script>
 						window.location = "'.$response->createTransactionResult->bankURL.'";
 						</script>';
-					//var_dump($response->requestId);
 				} else {
-					// There was some error so check the message
-
-					echo '<div class="alert alert-danger" role="alert" style ="font-size:16pt; margin-top:7px;">
+					// Hubo un error, muestra el mensaje
+					echo '<div >
 								<strong>Error !</strong> '.$response->createTransactionResult->returnCode.'
 								</div>'	;
 				}

@@ -9,6 +9,7 @@ require('Controlador/controladorPlantilla.php');
 require('Controlador/controladorUsuarios.php');
 require('Controlador/controladorProductos.php');
 require('Controlador/controladorVenta.php');
+require('Controlador/controladorRespuesta.php');
 
 require('Modelo/conexion.php');
 require('Modelo/usuarios.php');

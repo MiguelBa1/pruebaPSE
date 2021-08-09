@@ -1,5 +1,5 @@
 @import url('base.css');
-form {
+.container {
 	height: 30vh;
 	border-radius: 10px;
 	background-color: white;
@@ -16,8 +16,13 @@ form input{
 	font-size: 1em;
 	padding: .5em;
 }
-.submit {
-	width: 100%;
+#btnpagar {
+	padding: .5em;
+	margin-left: 1em;
+}
+a {
+	text-decoration:none;
+	color:black
 }
 @media (max-height: 950px) {
 	form {
