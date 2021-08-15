@@ -36,7 +36,7 @@ class ControladorVenta{
 						"company" => 'Prueba',
 						"emailAddress" => $_POST["email"],
 						"address" => $_POST["direccion"],
-						"company" => 'Medellin',
+						"city" => 'Medellin',
 						"country" => 'Colombia',
 						"documentType" => $_POST["tipodoc"],
 						"document" => $_POST["documento"],
@@ -49,7 +49,7 @@ class ControladorVenta{
 						"company" => 'Prueba',
 						"emailAddress" => $_POST["email"],
 						"address" => $_POST["direccion"],
-						"company" => 'Medellin',
+						"city" => 'Medellin',
 						"country" => 'Colombia',
 						"documentType" => $_POST["tipodoc"],
 						"document" => $_POST["documento"],
@@ -62,7 +62,7 @@ class ControladorVenta{
 						"company" => 'Prueba',
 						"emailAddress" => $_POST["email"],
 						"address" => $_POST["direccion"],
-						"company" => 'Medellin',
+						"city" => 'Medellin',
 						"country" => 'Colombia',
 						"documentType" => $_POST["tipodoc"],
 						"document" => $_POST["documento"],
@@ -80,27 +80,21 @@ class ControladorVenta{
 				$client = new SoapClient($_ENV['URL']);
 				$response = $client->createTransaction($request);
 				if ($response->createTransactionResult->returnCode == "SUCCESS") {
-					// Se redirecciona el cliente a la pagina
 					$_SESSION["transactionID"] =$response->createTransactionResult->transactionID;
+					$_SESSION["precio"] = $_POST["total"];
+					$_SESSION["moneda"] = $_POST["moneda"];
 					echo '<script>
 						window.location = "'.$response->createTransactionResult->bankURL.'";
 						</script>';
 				} else {
-					// Hubo un error, muestra el mensaje
 					echo '<div >
 								<strong>Error !</strong> '.$response->createTransactionResult->returnCode.'
 								</div>'	;
 				}
-				// var_dump($response);
 			} catch (Exception $e) {
-							var_dump($e->getMessage());
+							//var_dump($e->getMessage());
 			}
 		}
-	}
-
-	public function autenticacion($login, $tranKey){
-			 $this-> login = $login;
-			 $this-> tranKey = $tranKey;
 	}
 }
 ?>

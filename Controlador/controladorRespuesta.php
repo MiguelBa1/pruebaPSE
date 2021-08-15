@@ -19,7 +19,8 @@ class ControladorRespuesta{
 				try {
 					$client = new SoapClient($_ENV['URL']);
 					$response = $client->getTransactionInformation($request);
-					if ($response->getTransactionInformationResult->transactionState !== "NOT_AUTHORIZED") {
+					//var_dump($response);
+					if ($response->getTransactionInformationResult->transactionState !== "OK") {
 						return [
 							'result'=> $response->getTransactionInformationResult->responseReasonText,
 							'class'=> 'success',
@@ -27,7 +28,7 @@ class ControladorRespuesta{
 					} else {
 						return [
 							'result'=> $response->getTransactionInformationResult->responseReasonText,
-							'class'=> 'success',
+							'class'=> 'failed',
 						];
 					}
 					// var_dump($response);

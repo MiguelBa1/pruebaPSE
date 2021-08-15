@@ -16,9 +16,12 @@ form input{
 	font-size: 1em;
 	padding: .5em;
 }
-#btnpagar {
+button {
 	padding: .5em;
 	margin-left: 1em;
+}
+button:hover{
+	cursor: pointer;
 }
 a {
 	text-decoration:none;
