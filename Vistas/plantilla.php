@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-  <link rel="stylesheet" <?= 'href="styles/'.$_GET["ruta"].'.css"'?>>
+  <link rel="stylesheet" <?= 'href="Vistas/styles/'.$_GET["ruta"].'.css"'?>>
 
 </head>
 <body>

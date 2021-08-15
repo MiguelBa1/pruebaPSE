@@ -1,4 +1,6 @@
 <?php 
+// Este script es para actualizar la base de datos con la lista de
+// bancos que proporciona Placetopay
 // Para programar la tarea diariamente usamos 'cron' con el comando 
 // 00 18 * * * /usr/bin/php /opt/lamp/htdocs/probandoPHP/bancos.php
 
